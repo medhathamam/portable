@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portable | المشاريع المحمولة</title>
+<style>
+:root {
+  --bg:#0b1120;
+  --panel:#151f32;
+  --text:#e8eef9;
+  --muted:#9aa9c0;
+  --accent:#42b8a5;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:Tahoma,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+header {
+  padding:65px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#142d43,#102b35);
+}
+header h1 {font-size:42px;margin:0 0 15px}
+header p {color:#bdcbdc;font-size:17px}
+nav {
+  padding:16px;
+  text-align:center;
+  background:#111b2c;
+}
+nav a {
+  color:var(--text);
+  text-decoration:none;
+  margin:10px;
+}
+.container {max-width:1100px;margin:auto;padding:30px 20px}
+h2 {margin-top:35px}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+.card {
+  background:var(--panel);
+  padding:23px;
+  border:1px solid #26364e;
+  border-radius:14px;
+  transition:.2s;
+}
+.card:hover {
+  transform:translateY(-4px);
+  border-color:var(--accent);
+}
+.card h3 {margin-top:0;color:var(--accent)}
+.card p {color:var(--muted);line-height:1.8}
+.tag {
+  display:inline-block;
+  padding:5px 10px;
+  background:#20394a;
+  border-radius:20px;
+  font-size:12px;
+}
+.btn {
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 18px;
+  background:var(--accent);
+  color:#071a1b;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:bold;
+}
+footer {
+  text-align:center;
+  padding:30px;
+  color:var(--muted);
+  border-top:1px solid #26364e;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Portable Projects</h1>
+  <p>مكتبة المشاريع المحمولة والأدوات مفتوحة المصدر</p>
+  <p>برامج مستقلة • ذكاء اصطناعي • صوت • فيديو</p>
+</header>
+
+<nav>
+  <a href="#audio">الصوت</a>
+  <a href="#ai">الذكاء الاصطناعي</a>
+  <a href="#video">الصور والفيديو</a>
+  <a href="#about">حول الموقع</a>
+</nav>
+
+<main class="container">
+
+<section id="audio">
+<h2>🎵 Audio Projects</h2>
+<div class="grid">
+
+<article class="card">
+<h3>Demucs Portable</h3>
+<span class="tag">Audio Separation</span>
+<p>فصل المسارات الصوتية إلى غناء وطبول وبيس وموسيقى أخرى.</p>
+<a class="btn" href="#" >التفاصيل والتنزيل قريبًا</a>
+</article>
+
+<article class="card">
+<h3>Open-Unmix Portable</h3>
+<span class="tag">Audio Separation</span>
+<p>أداة مفتوحة المصدر لفصل مكونات الصوت.</p>
+<a class="btn" href="#">التفاصيل والتنزيل قريبًا</a>
+</article>
+
+<article class="card">
+<h3>Spleeter Portable</h3>
+<span class="tag">Audio Separation</span>
+<p>فصل الموسيقى إلى عدة مسارات مستقلة.</p>
+<a class="btn" href="#">التفاصيل والتنزيل قريبًا</a>
+</article>
+
+<article class="card">
+<h3>Audio Separator</h3>
+<span class="tag">Audio Processing</span>
+<p>معالجة الملفات الصوتية وفصل مصادر الصوت.</p>
+<a class="btn" href="#">التفاصيل والتنزيل قريبًا</a>
+</article>
+
+</div>
+</section>
+
+<section id="ai">
+<h2>🤖 AI & Voice Projects</h2>
+<div class="grid">
+
+<article class="card">
+<h3>Silero VAD Portable</h3>
+<span class="tag">Voice Detection</span>
+<p>اكتشاف الكلام والمقاطع الصوتية باستخدام الذكاء الاصطناعي.</p>
+<a class="btn" href="#">التفاصيل والتنزيل قريبًا</a>
+</article>
+
+<article class="card">
+<h3>SpeechBrain VAD</h3>
+<span class="tag">Voice Detection</span>
+<p>اكتشاف النشاط الصوتي باستخدام SpeechBrain.</p>
+<a class="btn" href="#">التفاصيل والتنزيل قريبًا</a>
+</article>
+
+<article class="card">
+<h3>XTTS-v2 Portable</h3>
+<span class="tag">Text To Speech</span>
+<p>توليد الكلام واستنساخ الأصوات بلغات متعددة.</p>
+<a class="btn" href="#">التفاصيل والتنزيل قريبًا</a>
+</article>
+
+</div>
+</section>
+
+<section id="video">
+<h2>🖼️ Image & Video Projects</h2>
+<div class="grid">
+
+<article class="card">
+<h3>DeOldify Portable</h3>
+<span class="tag">Image Colorization</span>
+<p>تلوين الصور القديمة باستخدام الذكاء الاصطناعي.</p>
+<a class="btn" href="#">التفاصيل والتنزيل قريبًا</a>
+</article>
+
+</div>
+</section>
+
+<section id="about">
+<h2>حول المشروع</h2>
+<p>
+مستودع مستقل لتجميع وتنظيم التطبيقات المحمولة،
+مع توفير معلومات التشغيل والإصدارات وروابط التنزيل.
+</p>
+</section>
+
+</main>
+
+<footer>
+<p>Portable Projects © 2026</p>
+<p>Powered by GitHub Pages</p>
+</footer>
+
+</body>
+</html>

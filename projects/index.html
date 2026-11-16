@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مكتبة المشاريع - Portable">
+    <title>المشاريع - Portable</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">Portable</a>
+            <ul class="navbar-menu">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="index.html">المشاريع</a></li>
+                <li><a href="../releases/index.html">الإصدارات</a></li>
+                <li><a href="../categories/audio.html">الصوت</a></li>
+                <li><a href="../categories/ai.html">الذكاء الاصطناعي</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="main-content">
+        <h1 class="section-title">مكتبة المشاريع</h1>
+
+        <!-- البحث -->
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="ابحث عن مشروع..." id="searchInput" onkeyup="searchProjects(this.value)">
+        </div>
+
+        <!-- الفلتر -->
+        <div class="filter-section">
+            <button class="filter-btn active" onclick="filterByCategory('all')">الكل</button>
+            <button class="filter-btn" onclick="filterByCategory('الصوت')">الصوت</button>
+            <button class="filter-btn" onclick="filterByCategory('الذكاء الاصطناعي')">الذكاء الاصطناعي</button>
+        </div>
+
+        <!-- فلترة الحالة -->
+        <div class="filter-section">
+            <button class="status-btn active" onclick="filterByStatus('all')">الكل</button>
+            <button class="status-btn" onclick="filterByStatus('ready')">✅ جاهز</button>
+            <button class="status-btn" onclick="filterByStatus('soon')">🚧 قريبًا</button>
+            <button class="status-btn" onclick="filterByStatus('experimental')">🧪 تجريبي</button>
+        </div>
+
+        <!-- شبكة المشاريع -->
+        <div class="grid-container">
+            <!-- Spleeter -->
+            <div class="card project-card">
+                <div class="project-card-header">
+                    <div class="project-icon">S</div>
+                    <div>
+                        <div class="project-title">Spleeter Portable</div>
+                        <span class="project-category">الصوت</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    أداة قوية لفصل المسارات الصوتية (فوكس، موسيقى، طبول) بجودة عالية
+                </p>
+                <span class="project-status status-ready">جاهز للتحميل</span>
+                <div class="project-actions">
+                    <a href="spleeter/index.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- Demucs -->
+            <div class="card project-card">
+                <div class="project-card-header">
+                    <div class="project-icon">D</div>
+                    <div>
+                        <div class="project-title">Demucs Portable</div>
+                        <span class="project-category">الصوت</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    نموذج متقدم لفصل المصادر الصوتية باستخدام الذكاء الاصطناعي
+                </p>
+                <span class="project-status status-ready">جاهز للتحميل</span>
+                <div class="project-actions">
+                    <a href="demucs/index.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- Open-Unmix -->
+            <div class="card project-card">
+                <div class="project-card-header">
+                    <div class="project-icon">O</div>
+                    <div>
+                        <div class="project-title">Open-Unmix Portable</div>
+                        <span class="project-category">الصوت</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    مكتبة مفتوحة المصدر لفصل المصادر الصوتية
+                </p>
+                <span class="project-status status-soon">قريبًا</span>
+                <div class="project-actions">
+                    <a href="open-unmix/index.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- Audio Separator -->
+            <div class="card project-card">
+                <div class="project-card-header">
+                    <div class="project-icon">A</div>
+                    <div>
+                        <div class="project-title">Audio Separator Portable</div>
+                        <span class="project-category">الصوت</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    أداة معالجة الملفات الصوتية وفصل مصادر الصوت
+                </p>
+                <span class="project-status status-soon">قريبًا</span>
+                <div class="project-actions">
+                    <a href="audio-separator/index.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- XTTS-v2 -->
+            <div class="card project-card">
+                <div class="project-card-header">
+                    <div class="project-icon">X</div>
+                    <div>
+                        <div class="project-title">XTTS-v2 Portable</div>
+                        <span class="project-category">الذكاء الاصطناعي</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    نظام تحويل نص إلى كلام متطور مع دعم متعدد اللغات
+                </p>
+                <span class="project-status status-soon">قريبًا</span>
+                <div class="project-actions">
+                    <a href="xtts-v2/index.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- Silero VAD -->
+            <div class="card project-card">
+                <div class="project-card-header">
+                    <div class="project-icon">S</div>
+                    <div>
+                        <div class="project-title">Silero VAD Portable</div>
+                        <span class="project-category">الذكاء الاصطناعي</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    نموذج اكتشاف النشاط الصوتي بدقة عالية
+                </p>
+                <span class="project-status status-soon">قريبًا</span>
+                <div class="project-actions">
+                    <a href="silero-vad/index.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- SpeechBrain VAD -->
+            <div class="card project-card">
+                <div class="project-card-header">
+                    <div class="project-icon">S</div>
+                    <div>
+                        <div class="project-title">SpeechBrain VAD Portable</div>
+                        <span class="project-category">الذكاء الاصطناعي</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    نموذج اكتشاف النشاط الصوتي من SpeechBrain
+                </p>
+                <span class="project-status status-soon">قريبًا</span>
+                <div class="project-actions">
+                    <a href="speechbrain-vad/index.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- DeOldify -->
+            <div class="card project-card">
+                <div class="project-card-header">
+                    <div class="project-icon">D</div>
+                    <div>
+                        <div class="project-title">DeOldify Portable</div>
+                        <span class="project-category">الذكاء الاصطناعي</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    تلوين الصور القديمة باستخدام الذكاء الاصطناعي
+                </p>
+                <span class="project-status status-soon">تجريبي</span>
+                <div class="project-actions">
+                    <a href="deoldify/index.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="main-content">
+            <p>&copy; 2026 Portable - مكتبة البرامج المحمولة</p>
+            <p>جميع البرامج مجانية ومفتوحة المصدر</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

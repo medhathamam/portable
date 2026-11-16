@@ -1,199 +1,126 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portable | المشاريع المحمولة</title>
-<style>
-:root {
-  --bg:#0b1120;
-  --panel:#151f32;
-  --text:#e8eef9;
-  --muted:#9aa9c0;
-  --accent:#42b8a5;
-}
-* { box-sizing:border-box; }
-body {
-  margin:0;
-  font-family:Tahoma,Arial,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-}
-header {
-  padding:65px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#142d43,#102b35);
-}
-header h1 {font-size:42px;margin:0 0 15px}
-header p {color:#bdcbdc;font-size:17px}
-nav {
-  padding:16px;
-  text-align:center;
-  background:#111b2c;
-}
-nav a {
-  color:var(--text);
-  text-decoration:none;
-  margin:10px;
-}
-.container {max-width:1100px;margin:auto;padding:30px 20px}
-h2 {margin-top:35px}
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:20px;
-}
-.card {
-  background:var(--panel);
-  padding:23px;
-  border:1px solid #26364e;
-  border-radius:14px;
-  transition:.2s;
-}
-.card:hover {
-  transform:translateY(-4px);
-  border-color:var(--accent);
-}
-.card h3 {margin-top:0;color:var(--accent)}
-.card p {color:var(--muted);line-height:1.8}
-.tag {
-  display:inline-block;
-  padding:5px 10px;
-  background:#20394a;
-  border-radius:20px;
-  font-size:12px;
-}
-.btn {
-  display:inline-block;
-  margin-top:12px;
-  padding:10px 18px;
-  background:var(--accent);
-  color:#071a1b;
-  border-radius:7px;
-  text-decoration:none;
-  font-weight:bold;
-}
-.btn-disabled {
-  background:#26364e;
-  color:var(--muted);
-  cursor:not-allowed;
-}
-footer {
-  text-align:center;
-  padding:30px;
-  color:var(--muted);
-  border-top:1px solid #26364e;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portable - مكتبة البرامج المحمولة المجانية ومفتوحة المصدر">
+    <title>Portable - مكتبة البرامج المحمولة</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Portable</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="projects/index.html">المشاريع</a></li>
+                <li><a href="releases/index.html">الإصدارات</a></li>
+                <li><a href="categories/audio.html">الصوت</a></li>
+                <li><a href="categories/ai.html">الذكاء الاصطناعي</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<header>
-  <h1>Portable Projects</h1>
-  <p>مكتبة المشاريع المحمولة والأدوات مفتوحة المصدر</p>
-  <p>برامج مستقلة • ذكاء اصطناعي • صوت • فيديو</p>
-</header>
+    <!-- المحتوى الرئيسي -->
+    <main class="main-content">
+        <!-- القسم الرئيسي -->
+        <section class="hero">
+            <h1 class="hero-title">مكتبة البرامج المحمولة</h1>
+            <p class="hero-subtitle">مجموعة من أفضل البرامج المجانية ومفتوحة المصدر في نسخ محمولة</p>
+            <a href="projects/index.html" class="btn btn-primary" style="background: white; color: var(--primary-color);">
+                استكشف المشاريع
+            </a>
+        </section>
 
-<nav>
-  <a href="#audio">الصوت</a>
-  <a href="#ai">الذكاء الاصطناعي</a>
-  <a href="#video">الصور والفيديو</a>
-  <a href="#about">حول الموقع</a>
-</nav>
+        <!-- الإحصائيات -->
+        <section class="stats">
+            <div class="card stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">مشروع متاح</div>
+            </div>
+            <div class="card stat-card">
+                <div class="stat-number">2</div>
+                <div class="stat-label">تصنيفات</div>
+            </div>
+            <div class="card stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">مجاني</div>
+            </div>
+            <div class="card stat-card">
+                <div class="stat-number">0</div>
+                <div class="stat-label">إعلانات</div>
+            </div>
+        </section>
 
-<main class="container">
+        <!-- التصنيفات -->
+        <section class="categories-section">
+            <h2 class="section-title">تصفح حسب التصنيف</h2>
+            <div class="category-grid">
+                <a href="categories/audio.html" class="card category-card">
+                    <div class="category-icon">🎵</div>
+                    <div class="category-name">الصوت</div>
+                    <div class="category-count">4 مشاريع</div>
+                </a>
+                <a href="categories/ai.html" class="card category-card">
+                    <div class="category-icon">🤖</div>
+                    <div class="category-name">الذكاء الاصطناعي</div>
+                    <div class="category-count">4 مشاريع</div>
+                </a>
+            </div>
+        </section>
 
-<section id="audio">
-<h2>🎵 Audio Projects</h2>
-<div class="grid">
+        <!-- المشاريع المميزة -->
+        <section class="featured-section">
+            <h2 class="section-title">⭐ المشاريع المميزة</h2>
+            <div class="grid-container" id="featuredProjects">
+                <!-- سيتم تحميل المشاريع المميزة من projects.json -->
+            </div>
+        </section>
+    </main>
 
-<article class="card">
-<h3>Demucs Portable</h3>
-<span class="tag">Audio Separation</span>
-<p>فصل المسارات الصوتية إلى غناء وطبول وبيس وموسيقى أخرى.</p>
-<a class="btn btn-disabled" href="#">التفاصيل والتنزيل قريبًا</a>
-</article>
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="main-content">
+            <p>&copy; 2026 Portable - مكتبة البرامج المحمولة</p>
+            <p>جميع البرامج مجانية ومفتوحة المصدر</p>
+        </div>
+    </footer>
 
-<article class="card">
-<h3>Open-Unmix Portable</h3>
-<span class="tag">Audio Separation</span>
-<p>أداة مفتوحة المصدر لفصل مكونات الصوت.</p>
-<a class="btn btn-disabled" href="#">التفاصيل والتنزيل قريبًا</a>
-</article>
-
-<article class="card">
-<h3>Spleeter Portable</h3>
-<span class="tag">Audio Separation</span>
-<p>فصل الموسيقى إلى عدة مسارات مستقلة.</p>
-<a class="btn" href="https://github.com/medhathamam/portable/releases/download/SpleeterPortable-v1.0.0/SpleeterPortable.zip">تحميل النسخة المحمولة 🚀</a>
-</article>
-
-<article class="card">
-<h3>Audio Separator</h3>
-<span class="tag">Audio Processing</span>
-<p>معالجة الملفات الصوتية وفصل مصادر الصوت.</p>
-<a class="btn btn-disabled" href="#">التفاصيل والتنزيل قريبًا</a>
-</article>
-
-</div>
-</section>
-
-<section id="ai">
-<h2>🤖 AI & Voice Projects</h2>
-<div class="grid">
-
-<article class="card">
-<h3>Silero VAD Portable</h3>
-<span class="tag">Voice Detection</span>
-<p>اكتشاف الكلام والمقاطع الصوتية باستخدام الذكاء الاصطناعي.</p>
-<a class="btn btn-disabled" href="#">التفاصيل والتنزيل قريبًا</a>
-</article>
-
-<article class="card">
-<h3>SpeechBrain VAD</h3>
-<span class="tag">Voice Detection</span>
-<p>اكتشاف النشاط الصوتي باستخدام SpeechBrain.</p>
-<a class="btn btn-disabled" href="#">التفاصيل والتنزيل قريبًا</a>
-</article>
-
-<article class="card">
-<h3>XTTS-v2 Portable</h3>
-<span class="tag">Text To Speech</span>
-<p>توليد الكلام واستنساخ الأصوات بلغات متعددة.</p>
-<a class="btn btn-disabled" href="#">التفاصيل والتنزيل قريبًا</a>
-</article>
-
-</div>
-</section>
-
-<section id="video">
-<h2>🖼️ Image & Video Projects</h2>
-<div class="grid">
-
-<article class="card">
-<h3>DeOldify Portable</h3>
-<span class="tag">Image Colorization</span>
-<p>تلوين الصور القديمة باستخدام الذكاء الاصطناعي.</p>
-<a class="btn btn-disabled" href="#">التفاصيل والتنزيل قريبًا</a>
-</article>
-
-</div>
-</section>
-
-<section id="about">
-<h2>حول المشروع</h2>
-<p>
-مستودع مستقل لتجميع وتنظيم التطبيقات المحمولة،
-مع توفير معلومات التشغيل والإصدارات وروابط التنزيل.
-</p>
-</section>
-
-</main>
-
-<footer>
-<p>Portable Projects © 2026</p>
-<p>Powered by GitHub Pages</p>
-</footer>
-
+    <script src="assets/js/main.js"></script>
+    <script>
+        // تحميل المشاريع المميزة
+        async function loadFeaturedProjects() {
+            try {
+                const response = await fetch('assets/js/projects.json');
+                const data = await response.json();
+                const featuredProjects = data.projects.filter(p => p.featured);
+                
+                const container = document.getElementById('featuredProjects');
+                container.innerHTML = featuredProjects.map(project => `
+                    <div class="card project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon">${project.icon}</div>
+                            <div>
+                                <div class="project-title">${project.name}</div>
+                                <span class="project-category">${project.category === 'audio' ? 'الصوت' : 'الذكاء الاصطناعي'}</span>
+                            </div>
+                        </div>
+                        <p class="project-description">${project.description}</p>
+                        <span class="project-status status-${project.status}">
+                            ${project.status === 'ready' ? 'جاهز للتحميل' : project.status === 'experimental' ? 'تجريبي' : 'قريبًا'}
+                        </span>
+                        <div class="project-actions">
+                            <a href="projects/${project.slug}/index.html" class="btn btn-primary">التفاصيل</a>
+                        </div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('خطأ في تحميل المشاريع المميزة:', error);
+            }
+        }
+        
+        loadFeaturedProjects();
+    </script>
 </body>
 </html>

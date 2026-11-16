@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portable Projects Schema",
+  "description": "نموذج البيانات لمشاريع Portable",
+  "type": "object",
+  "properties": {
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "slug", "name", "category", "status", "description", "page"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "معرف فريد للمشروع (مثل: spleeter)"
+          },
+          "slug": {
+            "type": "string",
+            "description": "معرف URL للمشروع (مثل: spleeter)"
+          },
+          "name": {
+            "type": "string",
+            "description": "اسم المشروع الكامل"
+          },
+          "category": {
+            "type": "string",
+            "enum": ["audio", "ai", "media"],
+            "description": "التصنيف الرئيسي"
+          },
+          "subcategory": {
+            "type": "string",
+            "description": "التصنيف الفرعي (مثل: audio-separation)"
+          },
+          "description": {
+            "type": "string",
+            "description": "وصف مختصر للمشروع"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["ready", "soon", "experimental"],
+            "description": "حالة المشروع"
+          },
+          "version": {
+            "type": "string",
+            "description": "إصدار المشروع"
+          },
+          "releaseDate": {
+            "type": ["string", "null"],
+            "format": "date",
+            "description": "تاريخ إصدار النسخة المحمولة (YYYY-MM-DD)"
+          },
+          "page": {
+            "type": "string",
+            "description": "رابط صفحة المشروع"
+          },
+          "image": {
+            "type": "string",
+            "description": "رابط صورة المشروع"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "description": "رابط المشروع الأصلي"
+          },
+          "repoUrl": {
+            "type": "string",
+            "description": "رابط مستودع النسخة المحمولة"
+          },
+          "downloadUrl": {
+            "type": "string",
+            "description": "رابط التنزيل المباشر"
+          },
+          "icon": {
+            "type": "string",
+            "description": "حرف الأيقونة"
+          },
+          "order": {
+            "type": "number",
+            "description": "ترتيب المشروع للتنقل (10, 20, 30...)"
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["windows", "linux", "macos"]
+            },
+            "description": "المنصات المدعومة"
+          },
+          "architectures": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["x64", "arm64", "x86"]
+            },
+            "description": "المعماريات المدعومة"
+          },
+          "lastVerified": {
+            "type": "string",
+            "format": "date",
+            "description": "تاريخ آخر مراجعة (YYYY-MM-DD)"
+          },
+          "released": {
+            "type": "boolean",
+            "description": "هل تم إصدار النسخة المحمولة؟"
+          },
+          "featured": {
+            "type": "boolean",
+            "description": "هل المشروع مميز؟"
+          },
+          "updated": {
+            "type": "string",
+            "format": "date",
+            "description": "تاريخ آخر تحديث (YYYY-MM-DD)"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "وسوم للمشروع للبحث والفلترة"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "قائمة المميزات"
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "قائمة متطلبات التشغيل"
+          }
+        }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "icon": {
+            "type": "string"
+          },
+          "count": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

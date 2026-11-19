@@ -21,9 +21,9 @@
 
 | المشروع | الحالة | الإصدار | التفاصيل |
 |---------|--------|---------|----------|
+| **Whisper Portable** | ✅ جاهز | v1.0.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/whisper/) |
 | **Silero VAD Portable** | 🚧 قريبًا | v1.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/silero-vad/) |
 | **SpeechBrain VAD Portable** | 🚧 قريبًا | v1.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/speechbrain-vad/) |
-| **XTTS-v2 Portable** | 🚧 قريبًا | v2.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/xtts-v2/) |
 | **DeOldify Portable** | 🧪 تجريبي | v1.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/deoldify/) |
 
 ## 📥 كيفية التنزيل والتشغيل

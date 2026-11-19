@@ -16,6 +16,8 @@
                 <li><a href="../index.html">الرئيسية</a></li>
                 <li><a href="../projects/index.html">المشاريع</a></li>
                 <li><a href="index.html">الإصدارات</a></li>
+                <li><a href="../categories/audio.html">الصوت</a></li>
+                <li><a href="../categories/ai.html">الذكاء الاصطناعي</a></li>
             </ul>
         </div>
     </nav>
@@ -66,44 +68,46 @@
                 }
                 
                 container.innerHTML = `
-                    <table style="width: 100%; border-collapse: collapse;">
-                        <thead>
-                            <tr style="border-bottom: 2px solid var(--border-color);">
-                                <th style="padding: 1rem; text-align: right;">المشروع</th>
-                                <th style="padding: 1rem; text-align: right;">الإصدار</th>
-                                <th style="padding: 1rem; text-align: right;">تاريخ الإصدار</th>
-                                <th style="padding: 1rem; text-align: right;">المنصة</th>
-                                <th style="padding: 1rem; text-align: center;">التحميل</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${releasedProjects.map(project => `
-                                <tr style="border-bottom: 1px solid var(--border-color);">
-                                    <td style="padding: 1rem;">
-                                        <a href="../projects/${project.slug}/index.html" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">
-                                            ${project.name}
-                                        </a>
-                                    </td>
-                                    <td style="padding: 1rem;">
-                                        <span style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.85rem;">
-                                            ${project.version}
-                                        </span>
-                                    </td>
-                                    <td style="padding: 1rem; color: var(--text-secondary);">
-                                        ${project.releaseDate || '-'}
-                                    </td>
-                                    <td style="padding: 1rem; color: var(--text-secondary);">
-                                        ${project.platforms ? project.platforms.map(p => p === 'windows' ? 'Windows' : p).join(', ') : '-'}
-                                    </td>
-                                    <td style="padding: 1rem; text-align: center;">
-                                        <a href="${project.downloadUrl}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
-                                            تحميل
-                                        </a>
-                                    </td>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; min-width: 560px; border-collapse: collapse;">
+                            <thead>
+                                <tr style="border-bottom: 2px solid var(--border-color);">
+                                    <th style="padding: 1rem; text-align: right;">المشروع</th>
+                                    <th style="padding: 1rem; text-align: right;">الإصدار</th>
+                                    <th style="padding: 1rem; text-align: right;">تاريخ الإصدار</th>
+                                    <th style="padding: 1rem; text-align: right;">المنصة</th>
+                                    <th style="padding: 1rem; text-align: center;">التحميل</th>
                                 </tr>
-                            `).join('')}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                ${releasedProjects.map(project => `
+                                    <tr style="border-bottom: 1px solid var(--border-color);">
+                                        <td style="padding: 1rem;">
+                                            <a href="../projects/${project.slug}/index.html" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">
+                                                ${project.name}
+                                            </a>
+                                        </td>
+                                        <td style="padding: 1rem;">
+                                            <span style="background: var(--primary-color); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.85rem;">
+                                                ${project.version}
+                                            </span>
+                                        </td>
+                                        <td style="padding: 1rem; color: var(--text-secondary);">
+                                            ${project.releaseDate || '-'}
+                                        </td>
+                                        <td style="padding: 1rem; color: var(--text-secondary);">
+                                            ${project.platforms ? project.platforms.map(p => p === 'windows' ? 'Windows' : p).join(', ') : '-'}
+                                        </td>
+                                        <td style="padding: 1rem; text-align: center;">
+                                            <a href="${project.downloadUrl}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                                                تحميل
+                                            </a>
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
                 `;
             } catch (error) {
                 console.error('خطأ في تحميل الإصدارات:', error);

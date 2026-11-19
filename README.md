@@ -14,8 +14,8 @@
 |---------|--------|---------|----------|
 | **Spleeter Portable** | ✅ جاهز | v1.0.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/spleeter/) |
 | **Demucs Portable** | ✅ جاهز | v4.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/demucs/) |
-| **Open-Unmix Portable** | 🚧 قريبًا | v1.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/open-unmix/) |
-| **Audio Separator Portable** | 🚧 قريبًا | v1.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/audio-separator/) |
+| **Open-Unmix Portable** | ✅ جاهز | v1.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/open-unmix/) |
+| **Audio Separator Portable** | ✅ جاهز | v1.0.0 | [التفاصيل](https://medhathamam.github.io/portable/projects/audio-separator/) |
 
 ### الذكاء الاصطناعي (AI)
 
